@@ -1,0 +1,274 @@
+* {
+    font-family: "noto-sans-oriya", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+.wrap{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo{
+    width: 180px;
+    transition: all 0.25s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.intro{
+    z-index: 10;
+    padding: 0 6.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.7em; /*文字上下间距*/
+}
+
+.title{
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #719d83;
+    letter-spacing: 0.015em;
+}
+
+.content{
+    margin: 1em 0;
+    color: #719d83;
+}
+
+.title{
+    font-size: 1.2em;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.lowerRight,.lowerLeft, .upperLeft, .upperRight{
+    width: 150px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.upperRight{
+    top: 0;
+    right: 0;
+}
+
+.lowerLeft{
+    bottom: 0;
+    left: 0;
+}
+.lowerRight{
+    right: 0;
+    bottom: 0;
+}
+.upperLeft{
+    transform: rotateZ(180deg);
+    top: 0;
+    left: 0;
+}
+.icon{
+    width: 20px;
+}
+
+.caseTitle{
+    position: relative;
+    color: #182E47;
+    z-index: 1;
+}
+
+.caseTitle::before{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #6995c1;
+    border-radius: 100%;
+    transform: translate(-50px,-30px);
+    opacity: 0.5;
+}
+
+/* DIY setting */
+.describeContent{
+    width: 100%;
+    height: 100%;
+    border-left: 80px solid #719d83;
+    padding: 7%;
+    position: relative;
+}
+
+.describeMain{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    overflow: hidden;
+}
+
+.describeBackground .logo{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 4vw;
+}
+.describeBackground .bg{
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 800px;
+    height: 80vh;
+    object-fit: contain;
+    
+}
+
+.dataContent{
+    width: 100%;
+    height: 100%;
+    border-right: 80px solid #719d83;
+    padding: 7%;
+    position: relative;
+}
+
+.dataContent main{
+    position: relative;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        overflow: hidden;
+}
+
+.dataContent main .databackground{
+    display: flex;
+    justify-content: right;
+}
+
+.dataContentBG{
+    height: 600px;
+}
+
+
+.thinkingContent{
+    position: relative;
+    margin: 5%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.thinkingContent .background{
+    z-index: 0; 
+}
+
+.thinkingContent  main{
+    width: 70%;
+    height: 70%;
+}
+
+.thinkingContent  main .intro .title,.thinkingContent  main .intro .content{
+    color: #6995c1;
+}
+
+
+.coreFunc{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coreFunc main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.coreFunc main .pagetitle{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #719d83;
+    letter-spacing: 0.05em;
+    margin-bottom: 15vh;
+}
+
+.coreFunc main .cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.cont .card{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont .card .content{
+    height: 150px;
+}
+
+.ProductDesignContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.ProductDesignContent .title{
+    text-align: center;
+    font-size: 1.5em;
+    color: #6995c1;
+    margin-bottom: 8vh;
+}
+
+.ProductDesignContentPic{
+    width: 40%;
+}
+
+
+.showcaseContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titlePart{
+    width: 100%;
+}
+
+.titlePart .title{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.video{
+    width: 80%;
+    height: 70vh;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    width: 100%;
+}
+
+.link span{font-weight: 700}

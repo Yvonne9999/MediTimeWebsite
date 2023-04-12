@@ -1,0 +1,364 @@
+* {
+    font-family: "noto-sans-oriya", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+.wrap{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo{
+    width: 180px;
+    transition: all 0.25s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.intro{
+    z-index: 10;
+    padding: 0 6.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.7em; /*文字上下间距*/
+}
+
+.title{
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #719d83;
+    letter-spacing: 0.015em;
+}
+
+.content{
+    margin: 1em 0;
+    color: #719d83;
+}
+
+.title{
+    font-size: 1.2em;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.lowerRight,.lowerLeft, .upperLeft, .upperRight{
+    width: 150px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.upperRight{
+    top: 0;
+    right: 0;
+}
+
+.lowerLeft{
+    bottom: 0;
+    left: 0;
+}
+.lowerRight{
+    right: 0;
+    bottom: 0;
+}
+.upperLeft{
+    transform: rotateZ(180deg);
+    top: 0;
+    left: 0;
+}
+.icon{
+    width: 20px;
+}
+
+.caseTitle{
+    position: relative;
+    color: #182E47;
+    z-index: 1;
+}
+
+.caseTitle::before{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #6995c1;
+    border-radius: 100%;
+    transform: translate(-50px,-30px);
+    opacity: 0.5;
+}
+
+
+/* DIY Part */
+.statementContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statementContent main{
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.statementContent main .intro{
+    padding: 0 20%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-10%);
+}
+
+
+.statementContent main .title{
+    color: #182E47;
+    font-size: 1.3rem;
+}
+
+.statementContent main .content{
+    color: #182E47;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    font-family: "noto-sans-oriya", sans-serif;
+}
+
+
+.goalContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .goalContent main {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .goalContent main .intro {
+    padding: 0 15%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-10%);
+  }
+  .goalContent main .intro .title {
+    color: #182E47;
+    font-size: 1.3rem;
+  }
+  .goalContent main .intro .title::before {
+    background-color: #719d83;
+  }
+  .goalContent main .intro .content {
+    color: #182E47;
+    font-size: 1.2rem;
+  }
+  
+
+
+  .researchContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .researchContent main {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .researchContent main .intro {
+    padding: 0 15%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-10%);
+  }
+  .researchContent main .intro .title {
+    color: #182E47;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+  }
+  .researchContent main .intro .title::before {
+    background-color: #6995c1;
+  }
+  .researchContent main .intro .secondayTitle {
+    margin-top: 30px;
+    color: #6995c1;
+    font-size: 1.1rem;
+  }
+  
+.personaContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personaContent main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personaContent main .intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.personaContent main .intro .title{
+  font-size: 1.3rem;
+  color: #182E47;
+}
+
+.personaContent main .intro .pic{
+  width: 800px;
+}
+
+.empathyContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empathyContent main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empathyContent main .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.empathyContent main .intro .title {
+  font-size: 1.3rem;
+  color: #182E47;
+}
+.empathyContent main .intro .title::before {
+  background-color: #719d83;
+}
+.empathyContent main .intro .pic {
+  width: 750px;
+}
+
+
+.userFlowContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userFlowContent main {
+  min-height: 80vh;
+  width: 90vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userFlowContent main .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.userFlowContent main .intro .title {
+  font-size: 1.3rem;
+  color: #182E47;
+  transform: translateX(10vw);
+}
+.userFlowContent main .intro .title::before {
+  background-color: #719d83;
+}
+.userFlowContent main .intro .pic {
+  width: 100%;
+}
+.userJourneyContent main {
+  transform: translateX(-100px);
+}
+.userJourneyContent main .intro .title::before {
+  background-color: #6995c1;
+}
+.userJourneyContent main .intro .pic {
+  width: 70%;
+  transform: translate(150px, 80px);
+}
+/* Golbal setting */
+.prototypeContent {
+  height: 100%;
+  background-color: #b9d6e8;
+  display: flex;
+  align-items: center;
+}
+.prototypeContent main {
+  padding-left: 0 90px 70px;
+  display: flex;
+  justify-content: space-around;
+}
+.prototypeContent main .intro .title {
+  color: #182E47;
+  margin-bottom: 5vh;
+  font-size: 1.4rem;
+}
+.prototypeContent main .intro .pic {
+  width: 80vw;
+}
+.endingPart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.endingPart main {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.endingPart main .bye1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #6995c1;
+}
+.endingPart main .bye2 {
+  font-size: 1.2rem;
+  color: #719d83;
+}
+.endingPart main .pic {
+  width: 100px;
+  transition: all 0.25s;
+}
+.endingPart main .pic:hover {
+  transform: scale(1.1);
+}
